@@ -31,17 +31,18 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-gray-800 p-1 flex items-center justify-between">
+      <nav className="bg-gray-800 flex items-center justify-between p-2">
         <div className="flex items-center">
-          <div className="flex justify-center font-semibold px-2 text-white">
+          <div className="flex justify-center font-semibold  text-white">
             <button id="openBtn" onClick={handleOpenSidebar}>
               <img
                 src="/src/assets/icon-menu.svg"
-                className="px-3"
+                className="mr-3 hover:bg-customRed py-5 px-4"
                 alt="Menu Icon"
               />
             </button>
-            MARKDOWN
+            <div className="flex justify-center mt-4" > MARKDOWN</div>
+           
           </div>
           <span className="border-l border-white mx-4 h-10" />
 
@@ -61,7 +62,7 @@ export const Navbar = () => {
                     onChange={handleInputChange}
                     onBlur={handleSave}
                     autoFocus
-                    className="bg-transparent text-white focus:outline-none focus:border-b border-white caret-red-500"
+                    className=" bg-transparent text-white focus:outline-none focus:border-b border-white caret-red-500 cursor-pointer"
                   />
                 </div>
               ) : (
@@ -76,15 +77,22 @@ export const Navbar = () => {
           </div>
         </div>
         <div className="flex flex-row items-center">
-          <button id="deleteDocBtn">
-            <p className="mr-2">
-              <img src="/src/assets/icon-delete.svg" alt="Delete Icon" />
-            </p>
-          </button>
+            <button id="deleteDocBtn" className="group">
+              <svg
+    width="18"
+    height="20"
+    xmlns="http://www.w3.org/2000/svg"
+    className="fill-current text-gray-500 group-hover:text-customRed"
+  >
+    <path d="M7 16a1 1 0 0 0 1-1V9a1 1 0 1 0-2 0v6a1 1 0 0 0 1 1ZM17 4h-4V3a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v1H1a1 1 0 1 0 0 2h1v11a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V6h1a1 1 0 0 0 0-2ZM7 3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1H7V3Zm7 14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6h10v11Zm-3-1a1 1 0 0 0 1-1V9a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1Z" />
+              </svg>
+            </button>
+
+
 
           <button
             id="saveDocBtn"
-            className="ml-2 items-center text-white flex flex-row bg-customRed p-2 rounded-sm mr-4"
+            className="ml-2 items-center text-white flex flex-row bg-customRed p-2 rounded-sm mr-4 hover:bg-customredhover"
           >
             <img
               src="/src/assets/icon-save.svg"
