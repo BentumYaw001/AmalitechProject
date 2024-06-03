@@ -37,7 +37,7 @@ export const Navbar = () => {
             <button id="openBtn" onClick={handleOpenSidebar}>
               <img
                 src="/src/assets/icon-menu.svg"
-                className="mr-3 hover:bg-customRed py-5 px-4"
+                className="mr-3 hover:bg-customRed py-5 px-4 bg-customblack3"
                 alt="Menu Icon"
               />
             </button>
@@ -115,7 +115,7 @@ export const Navbar = () => {
               />
             </button>
           </div>
-
+              <div className="text-gray-500 text-lg font-roboto font-bold">My Documents</div>
         </div>
       </div>
 

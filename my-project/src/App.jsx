@@ -11,8 +11,8 @@ function App() {
             <Navbar/>
             
            <main className="w-full h-screen grid grid-cols-1 sm:grid-cols-2 bg-gray-800">
-             <Editor markdown={markdown}/>
-             <Preview/>
+             <Editor markdown={markdown} setMarkdown={setMarkdown}/>
+             <Preview markdown={markdown}/>
            </main>
         </div>
         
