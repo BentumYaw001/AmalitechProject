@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Preview from "./components/Preview";
+import Preview from "./components/preview";
 import Editor from "./components/editor";
 import { Navbar } from "./components/navbar";
 
